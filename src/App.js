@@ -1,10 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-import { Router } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
 	return (
-		<Router>
+		<BrowserRouter>
 			<div className='App'>
 				<header className='App-header'>
 					<img src={logo} className='App-logo' alt='logo' />
@@ -21,7 +21,7 @@ function App() {
 					</a>
 				</header>
 			</div>
-		</Router>
+		</BrowserRouter>
 	);
 }
 
