@@ -4,6 +4,7 @@ import { Button, FlexWrap } from '../../Shared.styles';
 export const Wrap = styled.div`
 	display: grid;
 	grid-template-columns: 2fr 1fr;
+	background: orchid;
 `;
 
 export const HomeTab = styled(Button)`
