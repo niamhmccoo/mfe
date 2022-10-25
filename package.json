@@ -1,12 +1,15 @@
 {
 	"name": "mfe",
+	"homepage": ".",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
 		"@testing-library/jest-dom": "^5.16.5",
 		"@testing-library/react": "^13.4.0",
 		"@testing-library/user-event": "^13.5.0",
+		"@types/react": "^18.0.22",
 		"@types/styled-components": "^5.1.26",
+		"dotenv": "^16.0.3",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"react-router-dom": "^6.4.1",
@@ -23,7 +26,8 @@
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
 		"storybook": "start-storybook -p 6006",
-		"build-storybook": "build-storybook"
+		"build-storybook": "build-storybook",
+		"chromatic": "npx chromatic --project-token=1e6f8d5d7079"
 	},
 	"eslintConfig": {
 		"extends": [
@@ -64,6 +68,9 @@
 		"@storybook/preset-create-react-app": "^4.1.2",
 		"@storybook/react": "^6.5.12",
 		"@storybook/testing-library": "^0.0.13",
+		"chromatic": "^6.10.1",
 		"webpack": "^5.74.0"
-	}
+	},
+	"readme": "ERROR: No README data found!",
+	"_id": "mfe@0.1.0"
 }
