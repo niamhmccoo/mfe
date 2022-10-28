@@ -10,7 +10,7 @@ export type HeaderProps = {
 const Header = ({ title }: HeaderProps) => (
 	<HeaderWrap>
 		<Title text={title} />
-		<Button label='Follow me' kind='primary' size='small' dark={false} />
+		<Button label='Get started' kind='secondary' size='small' />
 	</HeaderWrap>
 );
 

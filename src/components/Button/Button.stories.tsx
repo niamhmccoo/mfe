@@ -5,43 +5,56 @@ import type { Story } from '@storybook/react';
 
 export default {
 	title: 'Components / Button',
+	component: Button,
 };
 
-export const Default: Story<ButtonProps> = (args) => (
-	<Button
-		label={args.label}
-		dark={args.dark}
-		disabled={args.disabled}
-		size={args.size}
-		kind={args.kind}
-	/>
+export const Primary: Story<ButtonProps> = (args) => (
+	<Button label={args.label} disabled={args.disabled} size={args.size} kind='primary' />
 );
 
-Default.args = {
-	label: 'Modern Frontends',
-	dark: false,
+Primary.args = {
+	label: 'Subscribe',
 	disabled: false,
 	size: 'small',
-	kind: 'primary',
 };
 
-Default.argTypes = {
+Primary.argTypes = {
 	label: { control: 'text' },
-	dark: { control: 'boolean' },
 	disabled: { control: 'boolean' },
 	size: { control: { type: 'radio', options: ['small', 'medium', 'large'] } },
-	kind: { control: { type: 'select', options: ['primary', 'secondary', 'danger'] } },
+	kind: { table: { disable: true } },
 };
 
-export const DarkMode: Story<ButtonProps> = (args) => (
-	<Default
-		label={args.label}
-		dark={args.dark}
-		disabled={args.disabled}
-		size={args.size}
-		kind={args.kind}
-	/>
+export const Secondary: Story<ButtonProps> = (args) => (
+	<Button label={args.label} disabled={args.disabled} size={args.size} kind='secondary' />
 );
 
-DarkMode.args = { ...Default.args, dark: true };
-DarkMode.argTypes = { ...Default.argTypes };
+Secondary.args = {
+	label: 'Subscribe',
+	disabled: false,
+	size: 'small',
+};
+
+Secondary.argTypes = {
+	label: { control: 'text' },
+	disabled: { control: 'boolean' },
+	size: { control: { type: 'radio', options: ['small', 'medium', 'large'] } },
+	kind: { table: { disable: true } },
+};
+
+export const Danger: Story<ButtonProps> = (args) => (
+	<Button label={args.label} disabled={args.disabled} size={args.size} kind='danger' />
+);
+
+Danger.args = {
+	label: 'Subscribe',
+	disabled: false,
+	size: 'small',
+};
+
+Danger.argTypes = {
+	label: { control: 'text' },
+	disabled: { control: 'boolean' },
+	size: { control: { type: 'radio', options: ['small', 'medium', 'large'] } },
+	kind: { table: { disable: true } },
+};

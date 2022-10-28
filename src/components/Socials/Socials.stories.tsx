@@ -24,3 +24,7 @@ Default.args = {
 		},
 	],
 };
+
+Default.argTypes = {
+	socials: { table: { disable: true } },
+};

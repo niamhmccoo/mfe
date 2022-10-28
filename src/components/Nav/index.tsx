@@ -1,16 +1,18 @@
 import React from 'react';
-import { Wrap, HomeTab, NavTabs, Tab } from './Nav.styles';
+import { Wrap, Border, HomeTab, NavTabs, Tab } from './Nav.styles';
 
-const tabs = [{ text: 'speaking' }, { text: 'writing' }, { text: 'learn to code!' }];
+const tabs = [{ text: '🎤 speaking' }, { text: '📖 writing' }, { text: '✨ learn to code' }];
 
 const Nav = () => (
 	<Wrap>
-		<HomeTab>Niamh (like 'neev')</HomeTab>
-		<NavTabs>
-			{tabs.map((t) => (
-				<Tab>{t.text}</Tab>
-			))}
-		</NavTabs>
+		<Border>
+			<HomeTab>👋 niamh (like 'neev')</HomeTab>
+			<NavTabs>
+				{tabs.map((t) => (
+					<Tab>{t.text}</Tab>
+				))}
+			</NavTabs>
+		</Border>
 	</Wrap>
 );
 

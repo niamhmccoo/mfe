@@ -1,5 +1,5 @@
 import React from 'react';
-import { Picture } from '../../Shared.styles';
+import { Picture } from '../../shared.styles';
 import { Wrap, StyledAnchor } from './Socials.styles';
 
 type Item = { src: any; alt: string; url: string };
