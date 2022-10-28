@@ -1,17 +1,18 @@
 import React from 'react';
-import { FlexWrap, Para } from '../../Shared.styles';
-import { StyledPicture } from './ImageAndText.styles';
+import { Para } from '../../shared.styles';
+import { ImgTextWrap, StyledPicture } from './ImageAndText.styles';
 import NiamhMcCooey from '../../../public/niamh-mccooey.jpeg';
 
 type ImageAndTextProps = {
-	text: string;
+	text: React.ReactElement;
+	reverse?: boolean;
 };
 
-const ImageAndText = ({ text }: ImageAndTextProps) => (
-	<FlexWrap>
+const ImageAndText = ({ text, reverse }: ImageAndTextProps) => (
+	<ImgTextWrap reverse={reverse}>
 		<StyledPicture src={NiamhMcCooey} />
 		<Para>{text}</Para>
-	</FlexWrap>
+	</ImgTextWrap>
 );
 
 export default ImageAndText;

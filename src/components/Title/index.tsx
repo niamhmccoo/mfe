@@ -3,9 +3,10 @@ import { TitleWrap } from './Title.styles';
 
 type TitleProps = {
 	text: string;
+	background?: string;
 };
-const Title = ({ text }: TitleProps) => (
-	<TitleWrap>
+const Title = ({ text, background }: TitleProps) => (
+	<TitleWrap background={background}>
 		<h1>{text}</h1>
 	</TitleWrap>
 );

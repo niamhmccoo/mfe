@@ -1,6 +1,9 @@
 import styled from 'styled-components';
-import { FlexWrap } from '../../Shared.styles';
+import { FlexWrap } from '../../shared.styles';
 
-export const HeaderWrap = styled(FlexWrap)`
-	border-bottom: solid 1px rgb(217, 217, 217);
+export const HeaderWrap = styled(FlexWrap)<{ theme?: string }>`
+	color: ${({ theme }) => theme.fg};
+	background: ${({ theme }) => theme.bg};
+	flex-flow: column nowrap;
+	align-items: center;
 `;

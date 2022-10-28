@@ -7,8 +7,21 @@ export default {
 	component: ImageAndText,
 };
 
-export const Default: Story = (args) => <ImageAndText text={args.text} />;
+export const Default: Story = (args) => <ImageAndText text={args.text} reverse={args.reverse} />;
 
 Default.args = {
-	text: 'Here is the bio! These are things I like to do, bla di bla bla bla.',
+	text: (
+		<>
+			👋 Hi! I'm Niamh (like 'neev').
+			<br />
+			<br />I like to build websites and web apps using React. <br />I also like to speak at tech
+			conferences, and going to meet ups.
+		</>
+	),
+	reverse: false,
+};
+
+Default.argTypes = {
+	text: { table: { disable: true } },
+	reverse: { control: 'boolean' },
 };

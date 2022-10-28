@@ -1,9 +1,16 @@
 import styled from 'styled-components';
-import { Button, FlexWrap } from '../../Shared.styles';
+import { Button, FlexWrap } from '../../shared.styles';
 
-export const Wrap = styled.div`
+export const Wrap = styled.div<{ theme?: string }>`
+	padding: 1rem 2rem;
+	color: ${({ theme }) => theme.fg};
+	background: ${({ theme }) => theme.bg};
+`;
+
+export const Border = styled.div`
 	display: grid;
-	grid-template-columns: 2fr 1fr;
+	grid-template-columns: 3fr 1fr;
+	border-bottom: ${({ theme }) => `solid 1px ${theme.bg}}`};
 `;
 
 export const HomeTab = styled(Button)`
@@ -12,4 +19,7 @@ export const HomeTab = styled(Button)`
 
 export const NavTabs = styled(FlexWrap)``;
 
-export const Tab = styled(Button)``;
+export const Tab = styled(Button)<{ theme?: string }>`
+	color: ${({ theme }) => theme.fg};
+	background: ${({ theme }) => theme.bg};
+`;
