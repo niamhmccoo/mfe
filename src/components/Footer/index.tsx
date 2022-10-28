@@ -2,7 +2,7 @@ import React from 'react';
 
 import LinkedIn from '../../../public/linkedin.svg';
 import Twitter from '../../../public/twitter.svg';
-import { Para } from '../../shared.styles';
+import { Para } from '../../Shared.styles';
 import { Wrap, FooterSocials } from './Footer.styles';
 
 type FooterProps = {
@@ -22,7 +22,7 @@ const socials = [
 	},
 ];
 
-const Footer = ({ text, background }: FooterProps) => (
+const Footer = ({ text }: FooterProps) => (
 	<Wrap>
 		<Para>{text}</Para>
 		<FooterSocials socials={socials} />

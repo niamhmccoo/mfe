@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Button, FlexWrap } from '../../shared.styles';
+import { Button, FlexWrap } from '../../Shared.styles';
 
 export const Wrap = styled.div<{ theme?: string }>`
 	padding: 1rem 2rem;

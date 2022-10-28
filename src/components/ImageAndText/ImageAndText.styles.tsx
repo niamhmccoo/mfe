@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Picture, FlexWrap } from '../../shared.styles';
+import { Picture, FlexWrap } from '../../Shared.styles';
 
 export const StyledPicture = styled(Picture)`
 	width: 16rem;
