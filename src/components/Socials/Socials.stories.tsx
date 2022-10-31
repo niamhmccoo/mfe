@@ -6,6 +6,7 @@ import Twitter from '../../../public/twitter.svg';
 
 export default {
 	title: 'Components / Socials',
+	component: Socials,
 };
 
 export const Default: Story = (args) => <Socials socials={args.socials} />;

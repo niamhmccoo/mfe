@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { FlexWrap } from '../../shared.styles';
+import { FlexWrap } from '../../Shared.styles';
 import Socials from '../Socials';
 
 export const Wrap = styled(FlexWrap)<{ theme?: string }>`

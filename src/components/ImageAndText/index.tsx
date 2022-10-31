@@ -1,5 +1,5 @@
 import React from 'react';
-import { Para } from '../../shared.styles';
+import { Para } from '../../Shared.styles';
 import { ImgTextWrap, StyledPicture } from './ImageAndText.styles';
 import NiamhMcCooey from '../../../public/niamh-mccooey.jpeg';
 

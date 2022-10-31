@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { FlexWrap } from '../../shared.styles';
+import { FlexWrap } from '../../Shared.styles';
 
 export const StyledAnchor = styled.a`
 	font-family: 'Helvetica Neue';

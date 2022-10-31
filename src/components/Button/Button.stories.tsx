@@ -21,7 +21,7 @@ Primary.args = {
 Primary.argTypes = {
 	label: { control: 'text' },
 	disabled: { control: 'boolean' },
-	size: { control: { type: 'radio', options: ['small', 'medium', 'large'] } },
+	size: { control: { type: 'select', options: ['small', 'medium', 'large'] } },
 	kind: { table: { disable: true } },
 };
 
@@ -30,9 +30,9 @@ export const Secondary: Story<ButtonProps> = (args) => (
 );
 
 Secondary.args = {
-	label: 'Subscribe',
+	label: 'Submit',
 	disabled: false,
-	size: 'small',
+	size: 'medium',
 };
 
 Secondary.argTypes = {
@@ -47,9 +47,9 @@ export const Danger: Story<ButtonProps> = (args) => (
 );
 
 Danger.args = {
-	label: 'Subscribe',
+	label: 'Warning!',
 	disabled: false,
-	size: 'small',
+	size: 'large',
 };
 
 Danger.argTypes = {
