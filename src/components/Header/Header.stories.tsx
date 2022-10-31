@@ -4,6 +4,7 @@ import type { Story } from '@storybook/react';
 
 export default {
 	title: 'Components / Header',
+	component: Header,
 };
 
 export const Default: Story = (args) => <Header title={args.title} />;

@@ -6,7 +6,7 @@ export const FlexWrap = styled.div`
 	justify-content: space-between;
 	padding: 1rem 0.5rem;
 	color: ${({ theme }) => theme.fg};
-	background: ${({ theme }) => theme.bg};
+	background: ${({ theme }) => theme.bg || 'none'};
 `;
 
 export const Button = styled.button<{ theme?: string }>`

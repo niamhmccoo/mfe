@@ -4,13 +4,13 @@ import type { Story } from '@storybook/react';
 
 export default {
 	title: 'Components / Title',
+	component: Title,
 };
 
-export const Default: Story = (args) => <Title text={args.text} background={args.background} />;
+export const Default: Story = (args) => <Title text={args.text} />;
 
 Default.args = {
 	text: "🚀 A Beginner's Guide To Storybook! ",
-	background: '',
 };
 
 Default.argTypes = {
