@@ -10,7 +10,7 @@ export const Wrap = styled.div<{ theme?: string }>`
 
 export const Border = styled.div`
 	display: grid;
-	grid-template-columns: 3fr 1.5fr;
+	grid-template-columns: 3fr 1fr;
 	border-bottom: ${({ theme }) => `solid 1px ${theme.bg}}`};
 `;
 
