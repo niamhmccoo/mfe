@@ -8,7 +8,7 @@ export const Wrap = styled(FlexWrap)<{ theme?: string }>`
 	flex-flow: column nowrap;
 	align-items: center;
 	text-align: center;
-	padding: 2rem;
+	padding: 4rem;
 `;
 
 export const FooterSocials = styled(Socials)`
